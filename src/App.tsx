@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { MobileDatePicker } from '@mui/x-date-pickers';
 import dayjs from 'dayjs';
 import { Dialog } from '@mui/material';
@@ -9,6 +10,8 @@ function App() {
 
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState<dayjs.Dayjs|null>(dayjs());
+
+  const x : any = "foo" as any;
 
   return (
     <div className="App">
